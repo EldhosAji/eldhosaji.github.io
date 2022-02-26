@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
+
+/* CONST variables */
+:root {
+  --primary-bg: #ffbb0e;
+  --primary-font-color: #2e3432;
+  --primary-font-hover-color: #ffffff;
+  --hover-tr-delay: 0.4s;
+}
+
+*,
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--primary-font-color);
+  font-size: 1.1rem;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--primary-bg);
+}
+/* Common class start*/
+.d-flex {
+  flex-direction: row;
+}
+.f-row {
+  display: flex;
+}
+/* Common class end*/
+
+/* Footer section start */
+footer {
+  position: absolute;
+  bottom: 0px;
+}
+footer > ul {
+  list-style-type: none;
+}
+footer > ul > li {
+  margin: 0px 1rem 0px 1rem;
+  padding: 2rem 0px 2rem 0px;
+}
+
+footer > ul > li ion-icon {
+  font-size: 1.3rem;
+  color: var(--primary-font-color);
+  -webkit-transition: color var(--hover-tr-delay) ease-out;
+  -moz-transition: color var(--hover-tr-delay) ease-out;
+  -o-transition: color var(--hover-tr-delay) ease-out;
+  transition: color var(--hover-tr-delay) ease-out;
+}
+footer > ul > li ion-icon:hover {
+  cursor: pointer;
+  color: var(--primary-font-hover-color);
+}
+
+/* Footer section end */
